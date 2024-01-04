@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    min-height: 100vh;
+    
+    background-image: url(https://img.freepik.com/premium-photo/close-up-hand-woman-using-mobile-smartphone_20693-1124.jpg?w=996);
+    background-size: cover;
+}
+img{
+    border-radius: 100px;
+    margin-top: 60px;
+    
+}
+#error-page{
+    position: relative;
+    
+}
+#error-page .content{
+    max-width: 650px;
+    text-align:left;
+}
+
+#error-page h4{
+    position: absolute;
+    color: #000;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 10px;
+     top: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+#error-page h4::before{
+    position: absolute;
+    content:attr(data-text);
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+    
+}
+#error-page p{
+    font-size: 1.2em;
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+#error-page .btns{
+    margin: 25px 0px;
+    display: inline-flex;
+}
+#error-page .btns a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #69a6ce;
+    color: #ff2508;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 0px 10px;
+    font-size: 20px;
+    
+}
+#error-page .btns a:hover{
+    background: #69a6ce;
+    color: #fff;
+}
